@@ -1,12 +1,6 @@
 from app import app
-from webbrowser import get
 from flask import Flask, render_template
 import requests
-import os 
-
-if __name__=='main':
-    port = int(os.getenv('PORT'), '5000')
-    app.run(host='0.0.0.0', port = port)
 
 app = Flask(__name__)
 
