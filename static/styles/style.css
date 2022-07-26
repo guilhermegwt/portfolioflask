@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f3fbfb;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #363636;
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+a {
+    color: #363636;
+    transition: 100ms;
+}
+
+a:hover {
+    text-decoration: underline #7B68EE;
+}
+
+a:visited {
+    color: #363636;
+}
+
+/* CABEÇALHO / BARRA DE NAVEGAÇÃO */
+
+.header .header-content .nav {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 75px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 22%;
+    margin-right: 22%;
+    padding-top: 10px;
+}
+
+.header .header-content .nav .resume-element {
+    position: relative;
+}
+
+.header .header-content .nav .projects-element {
+    position: relative;
+}
+
+/* TITULO / DESCRIÇÃO */
+
+.main .main-content .section-1 .title {
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 72px;
+    margin-top: 75px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.main .main-content .section-1 .tagline-1 {
+    text-align: left;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    margin-left: 20px;
+    margin-right: 20px;
+    word-wrap: normal;
+}
+
+/* SUBTITULOS */
+
+.main .subtitle-1 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+
+
+.main .subtitle-2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+
+/* CONTATOS */
+
+.main .contacts-content .section-2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main .projects-content .section-3 .tagline-2 {
+    text-align: left;
+    font-size: 18px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.main .contacts-content .section-2 .contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    margin-top: 50px;
+    margin-bottom: 75px;
+    margin-left: 32%;
+    margin-right: 32%;
+    white-space: wrap;
+    text-align: center;
+}
+
+
+.main .contacts-content .section-2 .contacts li {
+    width: 92px;
+}
+
+.main .contacts-content .section-2 .contacts li a {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* ABA PROJETOS */
+
+
+.main .projects-content .section-3 .projects {
+    font-weight: 700;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px 20px;
+    padding: 5px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main .projects-content .git-link {
+    margin-top: 50px;
+    margin-bottom: 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* RODAPE */
+
+
+.footer {
+    margin-top: 75px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 990px) {
+    body {
+        width: 80%;
+    }
+
+    .header .header-content .nav {
+        margin-left: 43%;
+        margin-right: 43%;
+    }    
+
+    .header .header-content .nav .projects-element {
+        margin-top: 20px;
+    }
+
+    .main .main-content .section-1 .title {
+        text-align: center;
+        word-wrap: normal;
+        font-size: 54px;
+    }
+
+    .main .main-content .section-1 .tagline-1 {
+        text-align: center;
+    }
+
+
+    .main .projects-content .section-3 .tagline-2 {
+        text-align: center;
+    }
+
+
+    .main .contacts-content .section-2 .contacts {
+        margin-left: 43%;
+        margin-right: 43%;
+    }
+
+    .main .contacts-content .section-2 .contacts li {
+        width: 92px;
+        margin-top: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 60%;
+    }
+
+    .header .header-content .nav {
+        margin-left: 43%;
+        margin-right: 43%;
+    }    
+
+    .header .header-content .nav .projects-element {
+        margin-top: 20px;
+    }
+
+    .main .main-content .section-1 .title {
+        text-align: center;
+        word-wrap: normal;
+        font-size: 54px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .main .main-content .section-1 .tagline-1 {
+        text-align: center;
+    }
+
+
+    .main .projects-content .section-3 .tagline-2 {
+        text-align: center;
+    }
+
+
+    .main .contacts-content .section-2 .contacts {
+        margin-left: 43%;
+        margin-right: 43%;
+    }
+
+    .main .contacts-content .section-2 .contacts li {
+        width: 92px;
+        margin-top: 20px;
+    }
+}

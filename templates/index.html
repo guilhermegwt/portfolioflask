@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+
+{% block projects %}
+
+    {% for datas in data %}
+    <div class="projects">
+        <a target="_blank" href="{{datas.html_url}}"><span>{{datas.name}}</span></a>
+    </div>
+    {% endfor %}
+
+{% endblock %}
