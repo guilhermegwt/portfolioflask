@@ -129,6 +129,8 @@ a:visited {
 
 .main .contacts-content .section-2 .contacts li {
     width: 92px;
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
 .main .contacts-content .section-2 .contacts li a {
